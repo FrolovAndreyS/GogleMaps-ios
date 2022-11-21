@@ -6,7 +6,9 @@ import PackageDescription
 let package = Package(
     name: "GoogleMapsPackage",
     products: [
-        .library(name: "GoogleMapsPackage", targets: ["GoogleMapsPackage"])],
+        .library(name: "GoogleMaps", targets: ["GoogleMaps"]),
+        .library(name: "GoogleMapsBase", targets: ["GoogleMapsBase"])
+    ],
     targets: [
         .binaryTarget(
             name: "GoogleMaps",
