@@ -19,7 +19,6 @@ let package = Package(
             name: "GoogleMapsBase",
             url: "https://github.com/FrolovAndreyS/GogleMaps-ios/releases/download/5.0.0rc/GoogleMapsBase.xcframework.zip",
             checksum: "6eaee4df67a68108d32ff2ccd360b8785d62f8f0fac4b8c58d2b29623aaf3a6f"
-        ),
-        .target(name: "GoogleMapsPackage", path: "Sources")
+        )
     ]
 )
