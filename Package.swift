@@ -10,7 +10,12 @@ let package = Package(
             name: "GoogleMapsPackage",
             targets: ["GoogleMapsPackage"]),
     ],
-    dependencies: [],
+    dependencies: [
+        .package(
+          url: "https://github.com/googlemaps/google-maps-ios-utils.git",
+          .upToNextMinor(from: "4.1.0")
+        )
+    ],
     targets: [
         .binaryTarget(
             name: "GoogleMaps",
